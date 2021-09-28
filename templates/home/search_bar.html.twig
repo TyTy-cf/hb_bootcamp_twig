@@ -1,0 +1,25 @@
+<div class="d-flex">
+    <form method="post" action="lettres.html" class="mt-3 row row-cols-lg-auto g-3 align-items-center mx-auto">
+        <div class="col-12">
+            <div class="input-group">
+                <label for="starter-pokemon" class="pt-1 me-1">Votre pokemon :</label>
+                <select id="starter-pokemon" name="starter-pokemon" class="form-select">
+                    <option value="bulbizarre">Bulbizarre</option>
+                    <option value="carapuce">Carapuce</option>
+                    <option value="salameche">Salamèche</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="input-group">
+                <label for="nickname"></label>
+                <input class="form-control" type="text" id="nickname" name="nickname-pkmn" required minlength="4" maxlength="16" placeholder="Nickname">
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-danger">OK</button>
+        </div>
+    </form>
+</div>

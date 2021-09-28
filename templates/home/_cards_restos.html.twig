@@ -1,0 +1,15 @@
+
+<a href="{{ path('booking', {'slug': resto['slug']}) }}">
+    <h2>{{ resto['name'] }}</h2>
+    <div>
+        <img src="{{ resto['image'] }}" alt="Image de {{ resto['name'] }}">
+    </div>
+    <div>
+        {% for tag in resto['tags']  %}
+            <p>{{ tag }}</p>
+        {% endfor %}
+        <p>{{ resto['prix'] }}</p>
+        <p>{{ resto['adresse'] }}
+        <p>{{ resto['telephone'] }}</p>
+    </div>
+</a>

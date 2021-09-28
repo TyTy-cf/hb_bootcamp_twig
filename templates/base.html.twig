@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Food Finder{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('styles') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('scripts') }}
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            {% include '/common/header.html.twig' %}
+        </header>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

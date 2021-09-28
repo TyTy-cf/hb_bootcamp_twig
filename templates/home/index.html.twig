@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des restaurants{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <h1>Accueil</h1>
+
+        {% include 'home/search_bar.html.twig' %}
+
+        <div class="row">
+            {% for resto in restos %}
+                <div class="col-4">
+                    {% include 'home/_cards_restos.html.twig' %}
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endblock %}
